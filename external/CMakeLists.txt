@@ -21,7 +21,7 @@ option(BUILD_WITH_BLASFEO "Build BLASFEO with cmake from git submodule" ON)
 
 if (BUILD_WITH_BLASFEO)
     message(STATUS "using BLASFEO with cmake from git submodule.")
-    set(BLASFEO_HEADERS_INSTALLATION_DIRECTORY "include/blasfeo/include" CACHE STRING "")
+    # set(BLASFEO_HEADERS_INSTALLATION_DIRECTORY "include/blasfeo/include" CACHE STRING "")
     set(TARGET ${BLASFEO_TARGET} CACHE STRING "Set CPU architecture target" FORCE)
     set(MF "PANELMAJ" CACHE STRING "Matrix format" FORCE)
     set(BLAS_API OFF CACHE BOOL "Compile BLAS API" FORCE)
